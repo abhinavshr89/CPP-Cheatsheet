@@ -1,12 +1,12 @@
 # Pair in C++ STL
 
-#### creating a pair and accessing the element inside the pair 
+### creating a pair and accessing the element inside the pair 
 ```cpp
 pair<int,int>p = {1,2};
 cout<<p.first<<" "<<p.second<<endl;
 ```
 
-#### creating a vector of pairs 
+### creating a vector of pairs 
 ```cpp
 vector<pair<int,int>> vecPair;
 for(int i = 0 ; i<10;i++){
@@ -20,7 +20,7 @@ for(int i = 0 ; i<10;i++){
 ```
 - We can also use `{}` instead of using `make_pair` to create a pair
 
-#### Iterating over a vector of pairs 
+### Iterating over a vector of pairs 
 ```cpp
 for(auto &it : vecPair){
     cout<<it.first<<" "<<it.second<<endl;
@@ -29,7 +29,7 @@ for(auto &it : vecPair){
 - In this kind of iteration we can only read the value inside the vector of pairs 
 - We can not modify the vector of pairs during iteration 
 
-#### Another way to iterate over the vector of pairs
+### Another way to iterate over the vector of pairs
 
 ```cpp
  for(auto it = vecPair.begin(); it != vecPair.end(); ){
@@ -47,7 +47,7 @@ for(auto &it : vecPair){
 - here when we erase an iterator it returns the next iterator , so we update the current iterator with the returned iterator 
 
 ----------------------------------------------------------------------------------------
-#### Sorting a vector of pairs 
+### Sorting a vector of pairs 
 ```cpp
 vector<pair<int,int>> vecP={{23,11},{2,100},{343,45},{234,32}};
 sort(vecP.begin(), vecP.end());
