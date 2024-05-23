@@ -47,7 +47,7 @@ for(auto &it : vecPair){
 - here when we erase an iterator it returns the next iterator , so we update the current iterator with the returned iterator 
 
 ----------------------------------------------------------------------------------------
-### Sorting a vector of pairs 
+### ➡️ Sorting a vector of pairs 
 ```cpp
 vector<pair<int,int>> vecP={{23,11},{2,100},{343,45},{234,32}};
 sort(vecP.begin(), vecP.end());
