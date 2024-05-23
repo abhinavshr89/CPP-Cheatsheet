@@ -45,7 +45,8 @@ int main()
     cout << strVal << endl;
 
     string str1 = "0123456789";
-    str1.insert(2,"Hello");
+    // str1.insert(2,"Hello");
+    str1.insert(str1.begin()+2,'H');
     cout<< str1 << endl;
     return 0;
 }

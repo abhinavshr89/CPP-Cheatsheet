@@ -103,3 +103,9 @@ str1.insert(2,"Hello"); //01Hello23456789
 - `insert(index,string)`
 - Here the first letter of the `string` will have the `index` same as the index given in the insert function
 - In the main string the index of `H` is `2`
+
+- Inserting a characer in string 
+```cpp
+str1.insert(str1.begin()+2,'H');
+```
+- `H` will be inserted at index 2 in str2
