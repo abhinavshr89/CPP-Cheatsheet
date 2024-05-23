@@ -48,5 +48,9 @@ int main()
     // str1.insert(2,"Hello");
     str1.insert(str1.begin()+2,'H');
     cout<< str1 << endl;
+
+    char n = '7';
+    
+    cout<<10 +(n-'0')<<endl;
     return 0;
 }

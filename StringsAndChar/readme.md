@@ -36,7 +36,15 @@ bool alphaNumericCheck = isalnum(ch);
 
 - `islower`: This function returns a non-zero value if the character is a lowercase letter, and 0 otherwise.
 
-
+**6. Converting char to integer and integer to char**
+```cpp
+char charDigit = '7';
+int intValue = charDigit - '0';  // This converts '7' to 7
+```
+```cpp
+int intValue = 7;
+char charDigit = intValue + '0';  // This converts 7 to '7'
+```
 -------------------------------------------------
 # Import functions related to strings 
 **1. append()**
