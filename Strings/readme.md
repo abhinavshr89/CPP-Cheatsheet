@@ -80,3 +80,26 @@ test.replace(1,5,"Potato"); //1Potato789
 - test.`replace(staringIndex , lengthToBeReplaced , NewSubstring)`
 - First the string from starting index to the given size is removed "1 _ _ _ _ _ 789"
 - Now the new given substring is added in the removed part 
+
+**5. stoi()**
+```cpp
+string number = "45467";
+int num = stoi(number);
+```
+- This converts a string to integer
+
+**6. to_string()**
+```cpp
+string number = "45467";
+int num = stoi(number);
+```
+- This converts the integer to string 
+
+**7. insert()**
+```cpp
+string str1 = "0123456789";
+str1.insert(2,"Hello"); //01Hello23456789
+```
+- `insert(index,string)`
+- Here the first letter of the `string` will have the `index` same as the index given in the insert function
+- In the main string the index of `H` is `2`

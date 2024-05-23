@@ -34,5 +34,18 @@ int main()
     string test = "123456789";
     test.replace(1,5,"Potato");
     cout<<test<<endl;
+    
+    string number = "45467";
+    int num = stoi(number);
+    cout << num << endl;
+
+
+    int val = 121323;
+    string strVal = to_string(val); 
+    cout << strVal << endl;
+
+    string str1 = "0123456789";
+    str1.insert(2,"Hello");
+    cout<< str1 << endl;
     return 0;
 }
