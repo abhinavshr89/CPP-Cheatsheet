@@ -11,6 +11,11 @@ int main() {
     cout << LowerCh << endl;
 
     cout<<isdigit(ch)<<endl;
-    
+
+    bool alphaCheck = isalpha(ch);
+    cout<<alphaCheck<<endl;
+
+    bool alphaNumericCheck = isalnum(ch);
+    cout<<alphaNumericCheck<<endl;
     return 0;
 }
