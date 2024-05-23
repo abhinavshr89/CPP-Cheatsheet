@@ -21,5 +21,17 @@ int main() {
 
     bool UpperCheck = isupper(ch);
     bool LowerCheck = islower(ch);
+
+
+
+    string str = "Hello";
+    // str.append(" World");
+    str += " World";
+    cout<<str<<endl;
+
+
+    string temp = "0123456789";
+    string sub = temp.substr(2,5);
+    cout<<sub<<endl;
     return 0;
 }

@@ -35,3 +35,27 @@ bool alphaNumericCheck = isalnum(ch);
 - `isupper`: This function returns a non-zero value if the character is an uppercase letter, and 0 otherwise.
 
 - `islower`: This function returns a non-zero value if the character is a lowercase letter, and 0 otherwise.
+
+
+-------------------------------------------------
+# Import functions related to strings 
+**1. append()**
+```cpp
+string str = "Hello";
+str.append(" World"); /// Output : Hello World
+```
+```cpp
+str += " World";
+```
+- `+=`This will also do the same thing as `append()`
+
+**2. substr**
+```cpp
+string temp = "0123456789";
+string sub = temp.substr(2,5);
+```
+Output:
+```
+23456
+```
+- temp.substr(starting_index , size_of_substring)
