@@ -17,5 +17,9 @@ int main() {
 
     bool alphaNumericCheck = isalnum(ch);
     cout<<alphaNumericCheck<<endl;
+
+
+    bool UpperCheck = isupper(ch);
+    bool LowerCheck = islower(ch);
     return 0;
 }

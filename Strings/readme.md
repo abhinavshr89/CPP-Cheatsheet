@@ -24,4 +24,14 @@ bool alphaCheck = isalpha(ch);
 ```cpp
 bool alphaNumericCheck = isalnum(ch);
 ```
-- isalnum: This function returns a non-zero value if the character is alphanumeric (either a digit or a letter), and 0 otherwise.
+- `isalnum`: This function returns a non-zero value if the character is alphanumeric (either a digit or a letter), and 0 otherwise.
+
+
+**5. isupper and islower**
+```cpp
+ bool UpperCheck = isupper(ch);
+ bool LowerCheck = islower(ch);
+```
+- `isupper`: This function returns a non-zero value if the character is an uppercase letter, and 0 otherwise.
+
+- `islower`: This function returns a non-zero value if the character is a lowercase letter, and 0 otherwise.
