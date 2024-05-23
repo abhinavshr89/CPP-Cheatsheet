@@ -27,7 +27,7 @@ bool alphaNumericCheck = isalnum(ch);
 - `isalnum`: This function returns a non-zero value if the character is alphanumeric (either a digit or a letter), and 0 otherwise.
 
 
-**5. isupper and islower**
+**5. isupper() and islower()**
 ```cpp
  bool UpperCheck = isupper(ch);
  bool LowerCheck = islower(ch);
@@ -49,13 +49,34 @@ str += " World";
 ```
 - `+=`This will also do the same thing as `append()`
 
-**2. substr**
+**2. substr()**
 ```cpp
 string temp = "0123456789";
-string sub = temp.substr(2,5);
-```
-Output:
-```
-23456
+string sub = temp.substr(2,5); // 23456
 ```
 - temp.`substr(starting_index , size_of_substring)`
+
+
+**3. find()**
+```cpp
+string str = "Hello, World!";
+size_t pos = str.find("World");
+if (pos != string::npos)
+{
+    cout << "Found at position: " << pos << endl;
+}
+else
+{
+    cout << "Not found" << endl;
+}
+```
+- if the substring is found in the string then it will return the first index of the substring 
+
+**4. replace()**
+```cpp
+string test = "123456789";
+test.replace(1,5,"Potato"); //1Potato789
+```
+- test.`replace(staringIndex , lengthToBeReplaced , NewSubstring)`
+- First the string from starting index to the given size is removed "1 _ _ _ _ _ 789"
+- Now the new given substring is added in the removed part 
