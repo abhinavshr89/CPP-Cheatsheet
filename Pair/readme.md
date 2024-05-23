@@ -10,9 +10,15 @@ cout<<p.first<<" "<<p.second<<endl;
 ```cpp
 vector<pair<int,int>> vecPair;
 for(int i = 0 ; i<10;i++){
-    vecPair.push_back(make_pair(i,i+1));
+    vecPair.push_back(make_pair(i,i+1)); 
 }
 ```
+```cpp
+for(int i = 0 ; i<10;i++){
+    vecPair.push_back({i,i+1});  
+}
+```
+- We can also use `{}` instead of using `make_pair` to create a pair
 
 #### Iterating over a vector of pairs 
 ```cpp
@@ -37,3 +43,6 @@ for(auto &it : vecPair){
 ```
 - Here in this method we can modify the vector of pairs while iterating too
 - But here we need to use `it->first` and `it->second` or we can use `*(it).first` and `*(it).second`
+- whenever we erase while iterating we need to update the iterator 
+- here when we erase an iterator it returns the next iterator , so we update the current iterator with the returned iterator 
+
