@@ -1,4 +1,4 @@
-# Importanct functions on char 
+# Important functions on char 
 
 **1. toupper() and tolower()**
 ```cpp
