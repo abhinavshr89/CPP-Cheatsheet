@@ -106,6 +106,6 @@ str1.insert(2,"Hello"); //01Hello23456789
 
 - Inserting a characer in string 
 ```cpp
-str1.insert(str1.begin()+2,'H');
+str1.insert(str1.begin()+2,'H'); //01H23456789
 ```
 - `H` will be inserted at index 2 in str2
