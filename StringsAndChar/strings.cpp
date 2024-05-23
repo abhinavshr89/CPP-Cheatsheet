@@ -1,6 +1,11 @@
-#include <iostream>
+#include <bits/stdc++.h>
 using namespace std;
-
+void print(vector<string> v){
+    for(auto & it : v){
+        cout<<it<<" ";
+    }
+    cout<<endl;
+}
 int main()
 {
     char ch = 'a';
@@ -50,7 +55,22 @@ int main()
     cout<< str1 << endl;
 
     char n = '7';
-    
+
     cout<<10 +(n-'0')<<endl;
     return 0;
+
+    string newStr = "The big brown fox jumped over the lazy dog";
+    vector<string> vecStr;
+    
+    stringstream ss(newStr);
+    string word;
+
+    while (getline(ss, word, ' ')) {
+        vecStr.push_back(word);
+    }
+
+    print(vecStr);
+
+    return 0;
+
 }

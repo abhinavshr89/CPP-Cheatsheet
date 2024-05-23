@@ -117,3 +117,34 @@ str1.insert(2,"Hello"); //01Hello23456789
 str1.insert(str1.begin()+2,'H'); //01H23456789
 ```
 - `H` will be inserted at index 2 in str2
+
+---------------------------------------------------
+## String Stream
+```cpp
+string str = "I$am$going$to$be$successful$no$matter$what";
+
+vector<string>v;
+
+stringstream ss(str);
+
+string temp;
+
+while(getline(ss,temp,'$')){
+    v.push_back(temp);
+}
+for(int i=0;i<v.size();i++){
+    cout<<v[i]<<endl;
+}
+```
+Output:
+```
+I
+am
+going
+to
+be
+successful
+no
+matter
+what
+```
