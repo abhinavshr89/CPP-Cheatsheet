@@ -46,3 +46,34 @@ for(auto &it : vecPair){
 - whenever we erase while iterating we need to update the iterator 
 - here when we erase an iterator it returns the next iterator , so we update the current iterator with the returned iterator 
 
+----------------------------------------------------------------------------------------
+#### Sorting a vector of pairs 
+```cpp
+vector<pair<int,int>> vecP={{23,11},{2,100},{343,45},{234,32}};
+sort(vecP.begin(), vecP.end());
+print(vecP);
+```
+Output : 
+```
+2 100
+23 11
+234 32
+343 45
+```
+
+**Using a comparator function** 
+```cpp
+
+bool pairComparator(pair<int,int> a,pair<int,int> b){
+    return a.second < b.second;
+}
+sort(vecP.begin(), vecP.end(),pairComparator);
+```
+
+Output:
+```
+23 11
+234 32
+343 45
+2 100
+```
